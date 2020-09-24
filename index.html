@@ -2,368 +2,474 @@
 <html>
 
 <head>
-  <meta property="og:image" content="https://centralvps.io/assets/img/LogoWhitePNG.png" />
-  <meta name="twitter:image" content="https://centralvps.io/assets/img/LogoWhitePNG.png" />
-  <meta property="og:title" content="CentralVPS" />
-  <meta property="og:url" content="https://centralvps.io" />
-  <meta property="og:description" content="Made with Performance in mind. This means we do what we can to ensure our customers experience the best Performance." />
-  <meta name="description" content="Made with Performance in mind. This means we do what we can to ensure our customers experience the best Performance." />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CentralVPS - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
-  <link rel='icon' href='assets/img/LogoWhitePNG.png' type='image/x-icon'/>
-  <script src="https://kit.fontawesome.com/43ef408fe4.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <meta property="og:image" content="https://centralvps.io/assets/img/LogoWhitePNG.png" />
+    <meta name="twitter:image" content="https://centralvps.io/assets/img/LogoWhitePNG.png" />
+    <meta property="og:title" content="CentralVPS" />
+    <meta property="og:url" content="https://centralvps.io" />
+    <meta property="og:description" content="Made with Performance in mind. This means we do what we can to ensure our customers experience the best Performance." />
+    <meta name="description" content="Made with Performance in mind. This means we do what we can to ensure our customers experience the best Performance." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CentralVPS - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <link rel='icon' href='assets/img/LogoWhitePNG.png' type='image/x-icon' />
+    <script src="https://kit.fontawesome.com/43ef408fe4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
-  <nav id="navigation">
-    <div class="container animated fadeInDown">
-      <div class="row">
-        <div class="col-sm-3 col-xs-3">
-          <div class="navbrand">
-            <img src="assets/img/logo.png" height="48px" style="margin-top: -13px"/>
-          </div>
-        </div>
-        <div class="col-sm-6 col-xs-3">
-          <ul class="nav-links">
-            <li class="nav-link">
-              <a href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-link">
-              <a href="#locations">Locations</a>
-            </li>
-            <li class="nav-link">
-              <a href="https://client.centralvps.io/">Client Area</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-sm-3 col-xs-3">
-          <a href="https://client.centralvps.io/clientarea.php" class="nav-btn">Login</a>
-          <span class="hamburger" onclick="nav()"><i class="fas fa-bars" aria-hidden="true"></i></span>
-        </div>
-      </div>
-    </div>
-  </nav>
-  
-  <div class="nav-dropdown" style="display: none;">
-    <ul class="anav-links">
-      <li class="anav-link">
-        <a href="#pricing">Pricing</a>
-      </li>
-      <li class="anav-link">
-        <a href="#locations">Locations</a>
-      </li>
-      <li class="anav-link">
-        <a href="http://client.centralvps.io/">Client Area</a>
-      </li>
-      <li class="anav-link">
-        <a href="https://client.centralvps.io/clientarea.php">Login</a>
-      </li>
-    </ul>
-  </div>
-  <header id="header">
-    <div class="container">
-      <div class="row animated fadeIn delay-1s">
-        <div class="col-md-8">
-          <h1 class="title">
-            Premium <span class="nav-offset">VPS</span> Service
-          </h1>
-          <p class="head-subtext">
-            CentralVPS was made with quality and performance<br />
-            in mind. This means we do our best to ensure our<br />
-            customers satisfaction fulfills their overall needs.
-          </p>
-          <h3 class="head-tagline">SERVERS THAT EXCEEDS YOUR STANDARDS.</h3>
-        </div>
-        <div class="col-md-4">
-          <img src="assets/img/head-img.png" class="head-img" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-2 col-sm-1"></div>
-        <div class="col-md-8 col-sm-12 animated fadeIn delay-2s">
-          <div class="features-bg">
+    <nav id="navigation">
+        <div class="container animated fadeInDown">
             <div class="row">
-              <div class="col-sm-6 stylecard">
-                <img src="assets/img/icon-1.png" class="feature-icon" />
-                <h5 class="feature-title">Instant Setup</h5>
-                <p class="feature-text">
-                  Processes are fully automatic and <br />delivered within a
-                  few minutes and <br />ready to use after you purchase.
-                </p>
-              </div>
-              <div class="col-sm-6 stylecard">
-                <img src="assets/img/icon-2.png" class="feature-icon" />
-                <h5 class="feature-title">SSD Storage</h5>
-                <p class="feature-text">
-                  Every server we provide is based <br />on high quality
-                  SSD storage to <br />ensure the best experience and speeds.
-                </p>
-              </div>
-              <div class="col-sm-6 stylecard">
-                <img src="assets/img/icon-3.png" class="feature-icon" style="padding-top: 0px;" />
-                <h5 class="feature-title">Reasonable Pricing</h5>
-                <p class="feature-text">
-                  Our servers are fit to match any <br />task, while
-                  still being affordable 
-                </p>
-              </div>
-              <div class="col-sm-6 stylecard">
-                <img src="assets/img/icon-4.png" class="feature-icon" style="padding-top: 0px;" />
-                <h5 class="feature-title">Premium Locations</h5>
-                <p class="feature-text">
-                  Our servers are placed in strategic locations <br />to
-                  ensure you have the best <br />possible connection.
-                </p>
-              </div>
+                <div class="col-sm-3 col-xs-3">
+                    <div class="navbrand">
+                        <img src="assets/img/logo.png" height="48px" style="margin-top: -13px" />
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-3">
+                    <ul class="nav-links">
+                        <li class="nav-link">
+                            <a href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#locations">Locations</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="https://billing.centralvps.io/">Client Area</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-xs-3">
+                    <a href="https://billing.centralvps.io/clientarea.php" class="nav-btn">Login</a>
+                    <span class="hamburger" onclick="nav()"><i class="fas fa-bars" aria-hidden="true"></i></span>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-md-2 col-sm-1"></div>
-      </div>
-    </div>
-  </header>
+    </nav>
 
-  <section id="pricing">
-    <div class="container fadeIn delay-3s">
-      <h2 class="section-title">PRICING</h2>
-      <div class="text-center">
-        <a href="#pricing" onClick="na()" class="country tna active">North America</a>
-      </div>
-      <div class="row na animated fadeIn">
-        <div class="col-md-4 stylecard">
-          <div class="pricing-inner text">
-            <p class="pricing-feature text-center" style="color: rgba(256, 256, 256, 0.8);">
-              NA - VPS
-            </p>
-            <h4 class="pricing-title">Bronze</h4>
-            <hr class="pricing-hr"/>
-            <h6 class="pricing-price">$15.00/month</h6>
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="assets/img/feature.png" class="pricing-icon" />
-              </div>
-              <div class="col-sm-8">
-                <span class="pricing-feature">2 Core</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="assets/img/feature.png" class="pricing-icon" />
-              </div>
-              <div class="col-sm-8">
-                <span class="pricing-feature">4GB Ram</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="assets/img/feature.png" class="pricing-icon" />
-              </div>
-              <div class="col-sm-8">
-                <span class="pricing-feature">80GB SSD</span>
-              </div>
-            </div>
-            <h6 class="pricing">Unlimited Bandwidth</h6>
-            <a class="pricing-btn" href="https://client.centralvps.io/cart.php?a=add&pid=3">Order Now</a>
-          </div>
-        </div>
-        <div class="col-md-4 stylecard">
-          <div class="pricing-inner">
-            <p class="pricing-feature text-center" style="color: rgba(256, 256, 256, 0.8);">
-              NA - VPS
-            </p>
-            <h4 class="pricing-title">Silver</h4>
-            <hr class="pricing-hr" />
-            <h6 class="pricing-price">$25.00/month</h6>
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="assets/img/feature.png" class="pricing-icon" />
-              </div>
-              <div class="col-sm-8">
-                <span class="pricing-feature">4 Cores</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="assets/img/feature.png" class="pricing-icon" />
-              </div>
-              <div class="col-sm-8">
-                <span class="pricing-feature">8GB Ram</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="assets/img/feature.png" class="pricing-icon" />
-              </div>
-              <div class="col-sm-8">
-                <span class="pricing-feature">160GB SSD</span>
-              </div>
-            </div>
-            <h6 class="pricing">Unlimited Bandwidth</h6>
-            <a class="pricing-btn" href="https://client.centralvps.io/cart.php?a=add&pid=4">Order Now</a>
-          </div>
-        </div>
-        <div class="col-md-4 stylecard">
-          <div class="pricing-inner">
-            <p class="pricing-feature text-center" style="color: rgba(256, 256, 256, 0.8);">
-              NA - VPS
-            </p>
-            <h4 class="pricing-title">Gold</h4>
-            <hr class="pricing-hr" />
-            <h6 class="pricing-price">$35.00/month</h6>
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="assets/img/feature.png" class="pricing-icon" />
-              </div>
-              <div class="col-sm-8">
-                <span class="pricing-feature">6 Cores</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="assets/img/feature.png" class="pricing-icon" />
-              </div>
-              <div class="col-sm-8">
-                <span class="pricing-feature">12GB Ram</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="assets/img/feature.png" class="pricing-icon" />
-              </div>
-              <div class="col-sm-8">
-                <span class="pricing-feature">240GB SSD</span>
-              </div>
-            </div>
-            <h6 class="pricing">Unlimited Bandwidth</h6>
-            <a class="pricing-btn" href="https://client.centralvps.io/cart.php?a=add&pid=5">Order Now</a>
-          </div>
-        </div>
-      </div>
-
-  <section id="locations">
-    <div class="container animated fadeIn delay-4s">
-      <h2 class="section-title">LOCATIONS</h2>
-      <img src="assets/img/map.png" class="map" draggable="false" />
+    <div class="nav-dropdown" style="display: none;">
+        <ul class="anav-links">
+            <li class="anav-link">
+                <a href="#pricing">Pricing</a>
+            </li>
+            <li class="anav-link">
+                <a href="#locations">Locations</a>
+            </li>
+            <li class="anav-link">
+                <a href="http://billing.centralvps.io/">Client Area</a>
+            </li>
+            <li class="anav-link">
+                <a href="https://billing.centralvps.io/clientarea.php">Login</a>
+            </li>
+        </ul>
     </div>
-  </section>
+    <header id="header">
+        <div class="container">
+            <div class="row animated fadeIn delay-1s">
+                <div class="col-md-8">
+                    <h1 class="title">
+                        Premium <span class="nav-offset">VPS</span> Service
+                    </h1>
+                    <p class="head-subtext">
+                        CentralVPS was made with quality and performance<br /> in mind. This means we do our best to ensure our<br /> customers satisfaction fulfills their overall needs.
+                    </p>
+                    <h3 class="head-tagline">SERVERS THAT EXCEEDS YOUR STANDARDS.</h3>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/head-img.png" class="head-img" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-1"></div>
+                <div class="col-md-8 col-sm-12 animated fadeIn delay-2s">
+                    <div class="features-bg">
+                        <div class="row">
+                            <div class="col-sm-6 stylecard">
+                                <img src="assets/img/icon-1.png" class="feature-icon" />
+                                <h5 class="feature-title">Instant Setup</h5>
+                                <p class="feature-text">
+                                    Processes are fully automatic and <br />delivered within a few minutes and <br />ready to use after you purchase.
+                                </p>
+                            </div>
+                            <div class="col-sm-6 stylecard">
+                                <img src="assets/img/icon-2.png" class="feature-icon" />
+                                <h5 class="feature-title">NVMe Storage</h5>
+                                <p class="feature-text">
+                                    Every server we provide is based <br />on NVMe storage to ensure the best <br />experience and speeds.
+                                </p>
+                            </div>
+                            <div class="col-sm-6 stylecard">
+                                <img src="assets/img/icon-3.png" class="feature-icon" style="padding-top: 0px;" />
+                                <h5 class="feature-title">Reasonable Pricing</h5>
+                                <p class="feature-text">
+                                    Our servers are fit to match any <br />task, while still being affordable.
+                                </p>
+                            </div>
+                            <div class="col-sm-6 stylecard">
+                                <img src="assets/img/icon-4.png" class="feature-icon" style="padding-top: 0px;" />
+                                <h5 class="feature-title">Premium Locations</h5>
+                                <p class="feature-text">
+                                    Our servers are placed in strategic <br />locations to ensure you have the best <br />possible connection.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-1"></div>
+            </div>
+        </div>
+    </header>
 
-  <section id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-sm-8 animated fadeIn delay-1s">
-          <div class="contact-inner">
-            <h2 class="section-title" style="padding-top: 0px; margin-top: 0px;">
-              CONTACT US
-            </h2>
-            <p class="contact-txt">
-              Feel free to contact us for more information
-            </p>
+    <section id="pricing">
+        <div class="container fadeIn delay-3s">
+            <h2 class="section-title">PRICING</h2>
             <div class="text-center">
-              <a href="https://client.centralvps.io/contact.php" class="footer-btn"><i class="fas fa-envelope"></i> EMAIL US</a>
-              <a href="https://discord.gg/DgVz7DZ" class="footer-btn"><i class="fab fa-discord"></i> OUR DISCORD</a>
+                <a href="#pricing" onClick="na()" class="country tna active">North America</a>
+                <a href="#pricing" onClick="eu()" class="country teu">Europe</a>
             </div>
-          </div>
+            <div class="row na animated fadeIn">
+                <div class="col-md-4 stylecard">
+                    <div class="pricing-inner text">
+                        <p class="pricing-feature text-center" style="color: rgba(256, 256, 256, 0.8);">
+                            NA - VPS
+                        </p>
+                        <h4 class="pricing-title">Bronze</h4>
+                        <hr class="pricing-hr" />
+                        <h6 class="pricing-price">$15.00/month</h6>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">2 Core</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">4GB Ram</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">80GB SSD</span>
+                            </div>
+                        </div>
+                        <h6 class="pricing">Unlimited Bandwidth</h6>
+                        <a class="pricing-btn" href="https://billing.centralvps.io/cart.php?a=add&pid=3">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4 stylecard">
+                    <div class="pricing-inner">
+                        <p class="pricing-feature text-center" style="color: rgba(256, 256, 256, 0.8);">
+                            NA - VPS
+                        </p>
+                        <h4 class="pricing-title">Silver</h4>
+                        <hr class="pricing-hr" />
+                        <h6 class="pricing-price">$25.00/month</h6>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">4 Cores</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">8GB Ram</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">100GB SSD</span>
+                            </div>
+                        </div>
+                        <h6 class="pricing">Unlimited Bandwidth</h6>
+                        <a class="pricing-btn" href="https://billing.centralvps.io/cart.php?a=add&pid=4">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4 stylecard">
+                    <div class="pricing-inner">
+                        <p class="pricing-feature text-center" style="color: rgba(256, 256, 256, 0.8);">
+                            NA - VPS
+                        </p>
+                        <h4 class="pricing-title">Gold</h4>
+                        <hr class="pricing-hr" />
+                        <h6 class="pricing-price">$35.00/month</h6>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">6 Cores</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">12GB Ram</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">120GB SSD</span>
+                            </div>
+                        </div>
+                        <h6 class="pricing">Unlimited Bandwidth</h6>
+                        <a class="pricing-btn" href="https://billing.centralvps.io/cart.php?a=add&pid=5">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row eu animated fadeIn">
+                <div class="col-md-4 stylecard">
+                    <div class="pricing-inner">
+                        <p class="pricing-feature text-center" style="color: rgba(256, 256, 256, 0.8);">
+                            EU - VPS
+                        </p>
+                        <h4 class="pricing-title">Bronze</h4>
+                        <hr class="pricing-hr" />
+                        <h6 class="pricing-price">$15.00/month</h6>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">2 Core</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">4GB Ram</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">80GB SSD</span>
+                            </div>
+                        </div>
+                        <h6 class="pricing">Unlimited Bandwidth</h6>
+                        <a class="pricing-btn" href="https://billing.centralvps.io/cart.php?a=add&pid=7">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4 stylecard">
+                    <div class="pricing-inner">
+                        <p class="pricing-feature text-center" style="color: rgba(256, 256, 256, 0.8);">
+                            EU - VPS
+                        </p>
+                        <h4 class="pricing-title">Silver</h4>
+                        <hr class="pricing-hr" />
+                        <h6 class="pricing-price">$25.00/month</h6>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">4 Cores</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">8GB Ram</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">100GB SSD</span>
+                            </div>
+                        </div>
+                        <h6 class="pricing">Unlimited Bandwidth</h6>
+                        <a class="pricing-btn" href="https://billing.centralvps.io/cart.php?a=add&pid=8">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4 stylecard">
+                    <div class="pricing-inner">
+                        <p class="pricing-feature text-center" style="color: rgba(256, 256, 256, 0.8);">
+                            EU - VPS
+                        </p>
+                        <h4 class="pricing-title">Gold</h4>
+                        <hr class="pricing-hr" />
+                        <h6 class="pricing-price">$35.00/month</h6>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">6 Cores</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">12GB Ram</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="assets/img/feature.png" class="pricing-icon" />
+                            </div>
+                            <div class="col-sm-8">
+                                <span class="pricing-feature">120GB SSD</span>
+                            </div>
+                        </div>
+                        <h6 class="pricing">Unlimited Bandwidth</h6>
+                        <a class="pricing-btn" href="https://billing.centralvps.io/cart.php?a=add&pid=9">Order Now</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-2"></div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="page-footer font-small pt-4">
-  <div class="container list-inline text-center">
-    <ul class= "list-unstyled list-inline text-center">
-      <li class="list-inline-item">
-        <a class="btn-floating btn-fb mx-1" href="http://client.centralvps.io/">
+    <section id="locations">
+        <div class="container animated fadeIn delay-4s">
+            <h2 class="section-title">LOCATIONS</h2>
+            <img src="assets/img/map.png" class="map" draggable="false" />
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-sm-8 animated fadeIn delay-1s">
+                    <div class="contact-inner">
+                        <h2 class="section-title" style="padding-top: 0px; margin-top: 0px;">
+                            CONTACT US
+                        </h2>
+                        <p class="contact-txt">
+                            Feel free to contact us for more information
+                        </p>
+                        <div class="text-center">
+                            <a href="https://billing.centralvps.io/contact.php" class="footer-btn"><i class="fas fa-envelope"></i> EMAIL US</a>
+                            <a href="https://discord.gg/DgVz7DZ" class="footer-btn"><i class="fab fa-discord"></i> OUR DISCORD</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer font-small pt-4">
+        <div class="container list-inline text-center">
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1" href="http://billing.centralvps.io/">
           Billing Panel
         </a>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-gplus mx-1" href="/tos.html">
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-gplus mx-1" href="/tos.html">
           Terms of Service
         </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-li mx-1" href="/tos.html">
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-li mx-1" href="/tos.html">
           Privacy Policy
         </a>
-      </li>
-    </ul>
-  </div>
-  <div class="footer-p footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://centralvps.io"> CentralVPS</a>
-  </div>
-</footer>
+                    </li>
+            </ul>
+        </div>
+        <div class="footer-p footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://centralvps.io"> CentralVPS</a>
+        </div>
+    </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    $(".eu").hide();
-    $(".nav-dropdown").hide();
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(".eu").hide();
+        $(".nav-dropdown").hide();
 
-    function na() {
-      $(".eu").hide();
-      $(".na").show();
+        function na() {
+            $(".eu").hide();
+            $(".na").show();
 
-      $(".tna").addClass("active");
-      $(".teu").removeClass("active");
-    }
-
-    function eu() {
-      $(".na").hide();
-      $(".eu").show();
-      $(".teu").addClass("active");
-      $(".tna").removeClass("active");
-    }
-
-    function nav() {
-      $(".nav-dropdown").toggle();
-    }
-  </script>
-  <script>
-    window.intercomSettings = {
-      app_id: "c7jtvsdr",
-    };
-  </script>
-
-  <script>
-    // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/c7jtvsdr'
-    (function() {
-      var w = window;
-      var ic = w.Intercom;
-      if (typeof ic === "function") {
-        ic("reattach_activator");
-        ic("update", w.intercomSettings);
-      } else {
-        var d = document;
-        var i = function() {
-          i.c(arguments);
-        };
-        i.q = [];
-        i.c = function(args) {
-          i.q.push(args);
-        };
-        w.Intercom = i;
-        var l = function() {
-          var s = d.createElement("script");
-          s.type = "text/javascript";
-          s.async = true;
-          s.src = "https://widget.intercom.io/widget/c7jtvsdr";
-          var x = d.getElementsByTagName("script")[0];
-          x.parentNode.insertBefore(s, x);
-        };
-        if (w.attachEvent) {
-          w.attachEvent("onload", l);
-        } else {
-          w.addEventListener("load", l, false);
+            $(".tna").addClass("active");
+            $(".teu").removeClass("active");
         }
-      }
-    })();
-  </script>
+
+        function eu() {
+            $(".na").hide();
+            $(".eu").show();
+            $(".teu").addClass("active");
+            $(".tna").removeClass("active");
+        }
+
+        function nav() {
+            $(".nav-dropdown").toggle();
+        }
+    </script>
+    <script>
+        window.intercomSettings = {
+            app_id: "",
+        };
+    </script>
+
+    <script>
+        (function() {
+            var w = window;
+            var ic = w.Intercom;
+            if (typeof ic === "function") {
+                ic("reattach_activator");
+                ic("update", w.intercomSettings);
+            } else {
+                var d = document;
+                var i = function() {
+                    i.c(arguments);
+                };
+                i.q = [];
+                i.c = function(args) {
+                    i.q.push(args);
+                };
+                w.Intercom = i;
+                var l = function() {
+                    var s = d.createElement("script");
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.src = "https://widget.intercom.io/widget/";
+                    var x = d.getElementsByTagName("script")[0];
+                    x.parentNode.insertBefore(s, x);
+                };
+                if (w.attachEvent) {
+                    w.attachEvent("onload", l);
+                } else {
+                    w.addEventListener("load", l, false);
+                }
+            }
+        })();
+    </script>
 </body>
 
 </html>
